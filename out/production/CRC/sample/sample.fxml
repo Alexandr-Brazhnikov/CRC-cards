@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <FlowPane prefHeight="134.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <SplitPane prefHeight="200.0" prefWidth="283.0">
+               <items>
+                  <TextArea fx:id="textArea" prefHeight="152.0" prefWidth="245.0" />
+               </items>
+            </SplitPane>
+            <FlowPane alignment="TOP_CENTER" hgap="20.0" prefHeight="200.0" prefWidth="315.0" vgap="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#classNameClicked" text="Имя класса" />
+                  <Button mnemonicParsing="false" onAction="#responsibilitiesClicked" text="Ответсвенность " />
+                  <Button mnemonicParsing="false" onAction="#collaboratorsClicked" text="Взаимодействие " />
+                  <Button mnemonicParsing="false" onAction="#clearClicked" text="Стереть" />
+                  <Button mnemonicParsing="false" onAction="#printClicked" text="Печать" />
+                  <ColorPicker fx:id="colorPicker" />
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </FlowPane>
+         </children>
+      </FlowPane>
+   </top>
+   <center>
+      <Canvas fx:id="canvas" height="191.0" width="586.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
